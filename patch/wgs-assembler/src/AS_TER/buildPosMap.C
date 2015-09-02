@@ -800,7 +800,8 @@ transferFrg(FILE *ctg, FILE *scf) {
     AS_UID uid = AS_UID_lookup(W[1], NULL);
     AS_IID iid = uid2iid[uid];
 
-    if (iid > 0) {
+    //if (iid > 0) {
+    if (uid2iid.count(uid)>0) {
       uid  = ctgInfo[iid].scfUID;
 
       assert(AS_UID_isDefined(uid));
@@ -867,7 +868,8 @@ transferVar(FILE *ctg, FILE *scf) {
       AS_UID uid = AS_UID_lookup(W[1], NULL);
       AS_IID iid = uid2iid[uid];
 
-      if (iid > 0) {
+      //if (iid > 0) {
+      if (uid2iid.count(uid)>0) {
         uid  = ctgInfo[iid].scfUID;
 
         assert(AS_UID_isDefined(uid));
