@@ -20,7 +20,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *************************************************************************/
 
-const char *mainid = "$Id: buildPosMap.C 4595 2015-02-03 02:52:44Z brianwalenz $";
+const char *mainid = "$Id: buildPosMap.C 4655 2015-09-03 05:00:35Z brianwalenz $";
 
 #include  <stdio.h>
 #include  <stdlib.h>
@@ -798,10 +798,10 @@ transferFrg(FILE *ctg, FILE *scf) {
     //  type (optional)
 
     AS_UID uid = AS_UID_lookup(W[1], NULL);
-    AS_IID iid = uid2iid[uid];
 
-    //if (iid > 0) {
-    if (uid2iid.count(uid)>0) {
+    if (uid2iid.count(uid) > 0) {
+      AS_IID iid = uid2iid[uid];
+
       uid  = ctgInfo[iid].scfUID;
 
       assert(AS_UID_isDefined(uid));
@@ -866,10 +866,10 @@ transferVar(FILE *ctg, FILE *scf) {
       int32 end = atoi(W[3]);
 
       AS_UID uid = AS_UID_lookup(W[1], NULL);
-      AS_IID iid = uid2iid[uid];
 
-      //if (iid > 0) {
-      if (uid2iid.count(uid)>0) {
+      if (uid2iid.count(uid) > 0) {
+        AS_IID iid = uid2iid[uid];
+
         uid  = ctgInfo[iid].scfUID;
 
         assert(AS_UID_isDefined(uid));
