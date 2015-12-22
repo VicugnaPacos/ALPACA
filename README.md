@@ -50,8 +50,8 @@ The second step runs ALPACA with the corrected long reads and the guide assembly
 ```
 mkdir TEST
 cd TEST
-../ALPACA/scripts/create_example.sh ../ALPACA/example_data/yeast.reference.fasta yeast.longread.fastq
-../ALPACA/scripts/run_alpaca.sh ../ALPACA/example_data/yeast.guide.fasta yeast.longread.fastq
+../ALPACA/scripts/create_example.sh ../ALPACA/example_data/yeast.reference.fasta yeast
+../ALPACA/scripts/run_alpaca.sh ../ALPACA/example_data/yeast.guide.fasta yeast.s.fastq
 ```
 
 
