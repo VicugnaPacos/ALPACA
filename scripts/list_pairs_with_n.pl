@@ -1,4 +1,4 @@
-#! /usr/local/bin/perl -w
+#! /usr/bin/env perl -w
 use strict;
 
 die ("Usage: $0 <min_N_len>") unless (scalar(@ARGV)==1);

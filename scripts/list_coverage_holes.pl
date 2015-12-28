@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#! /usr/bin/env perl -w
 
 use strict;
 die ("usage $0 coverage") unless (scalar(@ARGV)==1);

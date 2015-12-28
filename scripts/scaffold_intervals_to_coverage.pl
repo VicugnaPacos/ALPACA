@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#! /usr/bin/env perl -w
 
 use strict;
 die ("usage $0 <WindowSize>") unless (scalar(@ARGV)==1);

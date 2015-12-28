@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#! /usr/bin/env perl -w
 
 # Input: Integer
 # This process breaks old scaffolds into new ones.

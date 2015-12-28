@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#! /usr/bin/env perl -w
 
 use strict;
 my ($reffile) = $ARGV[0];
