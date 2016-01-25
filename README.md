@@ -31,7 +31,7 @@ The Celera Assembler binaries get installed to <HOME>/<ENV>/bin
 where HOME is the top level directory that contains src and kmer 
 and ENV describes your environment (e.g. Linux_x86_64).
 Not all Celera Assembler dependencies get tested during installation.
-For example, CA requires the Statistics::Descriptive perl module.
+For example, caqc.pl requires the Statistics::Descriptive perl module.
 If run without this, CA fails silently after logging the following error.
 ```
 Can't locate Statistics/Descriptive.pm in @INC (you may need to install the Statistics::Descriptive module)
