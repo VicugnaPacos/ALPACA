@@ -1,9 +1,10 @@
-#! /usr/bin/env perl -w
+#! /usr/bin/env perl 
+use warnings;
 
 use strict;
 
-my $hdr;
-my $seq;
+my $hdr="";
+my $seq="";
 
 while (!eof(STDIN)) {
     $_ = <STDIN>;

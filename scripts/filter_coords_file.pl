@@ -1,4 +1,5 @@
-#! /usr/bin/env perl -w
+#! /usr/bin/env perl 
+use warnings;
 use strict;
 
 die ("Usage: $0 <list_file>>") unless (scalar(@ARGV)==1);
