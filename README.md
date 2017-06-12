@@ -10,10 +10,15 @@ Put samtools on your PATH and run 'samtools' as a test.
 [htslib]: http://www.htslib.org/download/
 
 ### Install bowtie2 ###
-Install bowtie2 with a package manager like brew or apt-get.
+Install [bowtie2] with a package manager like brew or apt-get.
 Alternately, build bowtie2 from source or install binaries from Source Forge.
 
 [bowtie2]: http://sourceforge.net/projects/bowtie-bio/
+
+### Install ECtools ###
+Install [ECtools] from github.
+
+[ECTools]: https://github.com/jgurtowski/ectools
 
 ### Install Celera Assembler ###
 ALPACA requires Celera Assembler 8.3 or later.
